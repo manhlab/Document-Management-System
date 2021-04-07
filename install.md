@@ -19,6 +19,9 @@ docker-compose up -d nginx mysql phpmyadmin workspace
 # Enter the workspace
 docker-compose exec workspace bash
 
+chown $USER /var/run/docker.sock
+sudo systemctl start docker
+
 # Rename file env-example to .env
 cp .env.example .env
 
@@ -30,6 +33,8 @@ php artisan key:generate
 
 # Migrate database & seeders
 php artisan migrate:fresh --seed
+
+sudo php artisan cache:clear
 
 # Run the worker
 php artisan queue:work
