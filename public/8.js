@@ -1176,7 +1176,7 @@ var render = function() {
                     "CCol",
                     { attrs: { sm: "12" } },
                     [
-                      _c("label", [_vm._v("Văn bản đến")]),
+                      _c("label", [_vm._v("Inbox")]),
                       _vm._v(" "),
                       _c("treeselect", {
                         attrs: { multiple: false, options: _vm.documents },
