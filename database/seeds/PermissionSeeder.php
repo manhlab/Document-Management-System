@@ -92,5 +92,6 @@ class PermissionSeeder extends Seeder
         }
 
         User::find('PKTCN-TP-1')->assignRole('Администратор');
+        User::find('PKTCN-TP-100')->assignRole('Руководитель подразделения');
     }
 }
