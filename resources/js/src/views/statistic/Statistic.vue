@@ -1,7 +1,7 @@
 <template>
   <CCard>
     <CCardHeader>
-      <strong>Thống kê</strong>
+      <strong>Статистическая</strong>
     </CCardHeader>
     <CCardBody>
       <CForm>
@@ -10,7 +10,7 @@
             <CFormGroup class="form-group mb-0">
               <template #label>
                 <slot name="label">
-                  <label>Sổ văn bản</label>
+                  <label>Документы</label>
                 </slot>
               </template>
               <template #input>
@@ -19,7 +19,7 @@
                   :multiple="false"
                   :options="books"
                   :clearable="true"
-                  placeholder="Tất cả"
+                  placeholder="Все"
                 ></treeselect>
               </template>
             </CFormGroup>
@@ -28,7 +28,7 @@
             <CFormGroup class="form-group mb-0">
               <template #label>
                 <slot name="label">
-                  <label>Loại văn bản</label>
+                  <label>Вид документа</label>
                 </slot>
               </template>
               <template #input>
@@ -37,7 +37,7 @@
                   :multiple="false"
                   :options="types"
                   :clearable="true"
-                  placeholder="Tất cả"
+                  placeholder="Все"
                 ></treeselect>
               </template>
             </CFormGroup>
@@ -45,10 +45,10 @@
         </CRow>
         <CRow class="form-group">
           <CCol sm="6">
-            <CInput label="Từ ngày" type="date" :value.sync="statistic.from" class="mb-0" />
+            <CInput label="с" type="date" :value.sync="statistic.from" class="mb-0" />
           </CCol>
           <CCol sm="6">
-            <CInput label="Đến ngày" type="date" :value.sync="statistic.to" class="mb-0" />
+            <CInput label="по" type="date" :value.sync="statistic.to" class="mb-0" />
           </CCol>
         </CRow>
         <CRow class="form-group" v-if="false">
@@ -66,7 +66,7 @@
     </CCardBody>
     <CCardFooter>
       <CButton size="sm" @click="download" class="float-right" color="success">
-        <CIcon name="cil-vertical-align-bottom" />Xuất
+        <CIcon name="cil-vertical-align-bottom" />Export
       </CButton>
     </CCardFooter>
   </CCard>
@@ -129,7 +129,7 @@ export default {
       services.statistic
         .download(this.statistic)
         .then(response => {
-          this.$toast.success("Đã xuất báo cáo");
+          this.$toast.success("Exported báo cáo");
         })
         .catch(error => {
           this.toastHttpError(error);

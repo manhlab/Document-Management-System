@@ -10,7 +10,7 @@
           class="float-right"
           color="primary"
           variant="outline"
-          v-c-tooltip="'Tạo mới'"
+          v-c-tooltip="'Создать новый'"
           @click="showCreate"
         >
           <CIcon name="cil-plus" />
@@ -45,7 +45,7 @@
           color="success"
           @click="onClickCreate"
         >
-          <CIcon name="cil-plus" /> Tạo mới
+          <CIcon name="cil-plus" /> Создать новый
         </CButton>
         <CButton
           v-if="canUpdate && !createMode"
@@ -81,7 +81,7 @@ export default {
     title: {
       required: false,
       type: String,
-      default: "Danh sách"
+      default: "Список"
     },
     canCreate: {
       required: false,

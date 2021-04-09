@@ -198,7 +198,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       var _this3 = this;
 
       _services_factory__WEBPACK_IMPORTED_MODULE_1__["default"].statistic.download(this.statistic).then(function (response) {
-        _this3.$toast.success("Đã xuất báo cáo");
+        _this3.$toast.success("Exported báo cáo");
       })["catch"](function (error) {
         _this3.toastHttpError(error);
       });
@@ -226,7 +226,7 @@ var render = function() {
   return _c(
     "CCard",
     [
-      _c("CCardHeader", [_c("strong", [_vm._v("Thống kê")])]),
+      _c("CCardHeader", [_c("strong", [_vm._v("Статистическая")])]),
       _vm._v(" "),
       _c(
         "CCardBody",
@@ -251,7 +251,7 @@ var render = function() {
                               fn: function() {
                                 return [
                                   _vm._t("label", [
-                                    _c("label", [_vm._v("Sổ văn bản")])
+                                    _c("label", [_vm._v("Документы")])
                                   ])
                                 ]
                               },
@@ -266,7 +266,7 @@ var render = function() {
                                       multiple: false,
                                       options: _vm.books,
                                       clearable: true,
-                                      placeholder: "Tất cả"
+                                      placeholder: "Все"
                                     },
                                     model: {
                                       value: _vm.statistic.book,
@@ -302,7 +302,7 @@ var render = function() {
                               fn: function() {
                                 return [
                                   _vm._t("label", [
-                                    _c("label", [_vm._v("Loại văn bản")])
+                                    _c("label", [_vm._v("Вид документа")])
                                   ])
                                 ]
                               },
@@ -317,7 +317,7 @@ var render = function() {
                                       multiple: false,
                                       options: _vm.types,
                                       clearable: true,
-                                      placeholder: "Tất cả"
+                                      placeholder: "Все"
                                     },
                                     model: {
                                       value: _vm.statistic.type,
@@ -354,7 +354,7 @@ var render = function() {
                       _c("CInput", {
                         staticClass: "mb-0",
                         attrs: {
-                          label: "Từ ngày",
+                          label: "с",
                           type: "date",
                           value: _vm.statistic.from
                         },
@@ -375,7 +375,7 @@ var render = function() {
                       _c("CInput", {
                         staticClass: "mb-0",
                         attrs: {
-                          label: "Đến ngày",
+                          label: "по",
                           type: "date",
                           value: _vm.statistic.to
                         },
@@ -414,7 +414,7 @@ var render = function() {
             },
             [
               _c("CIcon", { attrs: { name: "cil-vertical-align-bottom" } }),
-              _vm._v("Xuất\n    ")
+              _vm._v("Export\n    ")
             ],
             1
           )

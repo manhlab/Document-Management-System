@@ -69,10 +69,10 @@ __webpack_require__.r(__webpack_exports__);
         password: this.password
       }).then(function (response) {
         _this.$router.push(_this.$route.query.redirectFrom || {
-          name: "Trang chủ"
+          name: "Домашняя страница"
         });
       }).then(function (response) {
-        _this.$toast.success("Đăng nhập thành công");
+        _this.$toast.success("Успешно войти");
       })["catch"](function (error) {
         _this.toastHttpError(error);
       });
@@ -122,7 +122,7 @@ var render = function() {
                             "CForm",
                             [
                               _c("h1", { staticClass: "pb-4" }, [
-                                _vm._v("Đăng nhập")
+                                _vm._v("Войти")
                               ]),
                               _vm._v(" "),
                               _c(
@@ -205,7 +205,7 @@ var render = function() {
                                           attrs: { color: "primary" },
                                           on: { click: _vm.login }
                                         },
-                                        [_vm._v("Đăng nhập")]
+                                        [_vm._v("Войти")]
                                       )
                                     ],
                                     1
@@ -221,7 +221,7 @@ var render = function() {
                                       _c(
                                         "CButton",
                                         { attrs: { color: "link" } },
-                                        [_vm._v("Quên mật khẩu?")]
+                                        [_vm._v("Забыли пароль?")]
                                       )
                                     ],
                                     1

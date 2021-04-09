@@ -28,7 +28,7 @@ __webpack_require__.r(__webpack_exports__);
       "default": function _default() {
         return [{
           value: "",
-          label: "Tất cả"
+          label: "Все"
         }];
       }
     }
@@ -190,51 +190,51 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       items: null,
       fields: [{
         key: "id",
-        label: "Mã"
+        label: "Код"
       }, {
         key: "name",
-        label: "Tên",
+        label: "Имя",
         _classes: "font-weight-bold"
       }, {
         key: "email",
         label: "Email"
       }, {
         key: "tel",
-        label: "Số điện thoại"
+        label: "Номер телефон"
       }, {
         key: "title",
-        label: "Chức danh"
+        label: "Должность"
       }, {
         key: "department",
-        label: "Phòng ban"
+        label: "Подразделение"
       }],
       searchFields: [{
         value: "",
-        label: "Tất cả"
+        label: "Все"
       }, {
         value: "id",
-        label: "Mã"
+        label: "Код"
       }, {
         value: "name",
-        label: "Tên"
+        label: "Имя"
       }, {
         value: "email",
         label: "Email"
       }, {
         value: "tel",
-        label: "Số điện thoại"
+        label: "Номер телефон"
       }, {
         value: "birthday",
-        label: "Ngày sinh"
+        label: "Дата рождения"
       }, {
         value: "title.name",
-        label: "Chức danh"
+        label: "Должность"
       }, {
         value: "department.name",
-        label: "Phòng ban"
+        label: "Подразделение"
       }, {
         value: "created_at",
-        label: "Ngày tạo"
+        label: "Дата создания"
       }],
       currentPage: 1,
       pages: 0,
@@ -372,7 +372,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         search: this.searchValue,
         searchFields: this.searchField
       }).then(function (response) {
-        _this3.$toast.success("Đã xuất");
+        _this3.$toast.success("Exported");
       })["catch"](function (error) {
         _this3.toastHttpError(error);
       });
@@ -417,7 +417,7 @@ var render = function() {
         { attrs: { sm: "9" } },
         [
           _c("CInput", {
-            attrs: { placeholder: "Tìm kiếm", value: _vm.value },
+            attrs: { placeholder: "Искать", value: _vm.value },
             on: {
               "update:value": [
                 function($event) {
@@ -470,7 +470,7 @@ var render = function() {
                 "CCardHeader",
                 [
                   _c("CIcon", { attrs: { name: "cil-grid" } }),
-                  _vm._v("Danh sách người dùng\n        "),
+                  _vm._v("Список пользавателя\n        "),
                   _c(
                     "CButton",
                     {
@@ -478,8 +478,8 @@ var render = function() {
                         {
                           name: "c-tooltip",
                           rawName: "v-c-tooltip",
-                          value: "Tạo mới",
-                          expression: "'Tạo mới'"
+                          value: "Создать новый",
+                          expression: "'Создать новый'"
                         }
                       ],
                       staticClass: "float-right",
@@ -501,8 +501,8 @@ var render = function() {
                         {
                           name: "c-tooltip",
                           rawName: "v-c-tooltip",
-                          value: "Xuất",
-                          expression: "'Xuất'"
+                          value: "Export",
+                          expression: "'Export'"
                         }
                       ],
                       staticClass: "float-right mr-2",
@@ -528,8 +528,8 @@ var render = function() {
                         {
                           name: "c-tooltip",
                           rawName: "v-c-tooltip",
-                          value: "Nhập",
-                          expression: "'Nhập'"
+                          value: "Import",
+                          expression: "'Import'"
                         }
                       ],
                       staticClass: "float-right mr-2",
@@ -584,7 +584,7 @@ var render = function() {
                             _c("td", [
                               _vm._v(
                                 _vm._s(
-                                  item.title ? item.title.name : "Chưa xác định"
+                                  item.title ? item.title.name : "Неопределено"
                                 )
                               )
                             ])
@@ -601,7 +601,7 @@ var render = function() {
                                 _vm._s(
                                   item.department
                                     ? item.department.name
-                                    : "Chưa xác định"
+                                    : "Неопределено"
                                 )
                               )
                             ])

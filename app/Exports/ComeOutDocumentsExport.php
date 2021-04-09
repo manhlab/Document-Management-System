@@ -9,11 +9,11 @@ class ComeOutDocumentsExport extends BaseDocumentsExport
     public function headings(): array
     {
         return [
-            'Ngày ban hành',
+            'Дата выдачи',
             'Ký hiệu',
-            'Loại',
-            'Trích yếu',
-            'Nơi nhận',
+            'Тип документа',
+            'Краткое содержание',
+            'Место получения',
         ];
     }
 

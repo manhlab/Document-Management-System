@@ -28,7 +28,7 @@ __webpack_require__.r(__webpack_exports__);
       "default": function _default() {
         return [{
           value: "",
-          label: "Tất cả"
+          label: "Все"
         }];
       }
     }
@@ -237,56 +237,56 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     fields: function fields() {
       return [{
         key: "symbol",
-        label: "Số ký hiệu"
+        label: "Номер регистрации"
       }, {
         key: "abstract",
-        label: "Trích yếu",
+        label: "Краткое содержание",
         _classes: "w-50 font-weight-bold"
       }, {
         key: "type",
-        label: "Loại"
+        label: "Тип документа"
       }, {
         key: "publisher",
-        label: "Nơi ban hành"
+        label: "Место выдачи"
       }, {
         key: "effective_at",
-        label: this.isDocumentsIncome ? "Ngày nhận" : "Ngày ban hành"
+        label: this.isDocumentsIncome ? "Дата получения" : "Дата выдачи"
       }];
     },
     searchFields: function searchFields() {
       return [{
         value: "symbol",
-        label: "Số ký hiệu"
+        label: "Номер регистрации"
       }, {
         value: "abstract",
-        label: "Trích yếu"
+        label: "Краткое содержание"
       }, {
         value: "type.name",
-        label: "Loại"
+        label: "Тип документа"
       }, {
         value: "creator.name",
-        label: "Người soạn"
+        label: "Создатель"
       }, {
         value: "signer.name",
-        label: "Người ký"
+        label: "Подписал"
       }, {
         value: "effective_at",
-        label: this.isDocumentsIncome ? "Ngày nhận" : "Ngày ban hành"
+        label: this.isDocumentsIncome ? "Дата получения" : "Дата выдачи"
       }, {
         value: "sign_at",
-        label: "Ngày ký"
+        label: "Дата подписания"
       }, {
         value: "publisher.name",
-        label: "Nơi ban hành"
+        label: "Место выдачи"
       }, {
         value: "organizes.name",
-        label: "Nơi nhận"
+        label: "Место получения"
       }, {
         value: "linkTo.symbol",
-        label: "Liên kết văn bản đến"
+        label: "Разрешении входящие документы"
       }, {
         value: "receivers.seen",
-        label: "Chưa xem",
+        label: "Непрочитанные",
         defaultValue: 0
       }];
     },
@@ -392,7 +392,7 @@ var render = function() {
         { attrs: { sm: "9" } },
         [
           _c("CInput", {
-            attrs: { placeholder: "Tìm kiếm", value: _vm.value },
+            attrs: { placeholder: "Искать", value: _vm.value },
             on: {
               "update:value": [
                 function($event) {
@@ -445,7 +445,7 @@ var render = function() {
                 "CCardHeader",
                 [
                   _c("CIcon", { attrs: { name: "cil-grid" } }),
-                  _vm._v("Danh sách văn bản\n        "),
+                  _vm._v("Книга\n        "),
                   _c(
                     "CButton",
                     {
@@ -453,8 +453,8 @@ var render = function() {
                         {
                           name: "c-tooltip",
                           rawName: "v-c-tooltip",
-                          value: "Tạo mới",
-                          expression: "'Tạo mới'"
+                          value: "Создать новый",
+                          expression: "'Создать новый'"
                         }
                       ],
                       staticClass: "float-right",

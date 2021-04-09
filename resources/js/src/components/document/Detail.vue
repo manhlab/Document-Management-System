@@ -1,8 +1,8 @@
 <template>
   <CCard>
     <CCardHeader>
-      <strong v-if="documentId">Chi tiết văn bản</strong>
-      <strong v-else>Tạo văn bản</strong>
+      <strong v-if="documentId">О документе</strong>
+      <strong v-else>Создать документ</strong>
     </CCardHeader>
     <CCardBody>
       <CForm>
@@ -10,7 +10,7 @@
           <CCol sm="6">
             <CSelect
               class="mb-0"
-              label="Sổ văn bản"
+              label="Документы"
               :options="books"
               :value.sync="document.book_id"
               placeholder="Please select"
@@ -20,7 +20,7 @@
             <CFormGroup class="form-group mb-0">
               <template #label>
                 <slot name="label">
-                  <label>Loại văn bản</label>
+                  <label>Вид документа</label>
                 </slot>
               </template>
               <template #input>
@@ -36,7 +36,7 @@
         </CRow>
         <CRow class="form-group">
           <CCol sm="12">
-            <CInput label="Số ký hiệu" :value.sync="document.symbol" class="mb-0" />
+            <CInput label="Номер регистрации" :value.sync="document.symbol" class="mb-0" />
           </CCol>
         </CRow>
         <CRow class="form-group">
@@ -44,7 +44,7 @@
             <CFormGroup class="form-group mb-0">
               <template #label>
                 <slot name="label">
-                  <label>Người soạn</label>
+                  <label>Создатель</label>
                 </slot>
               </template>
               <template #input>
@@ -64,11 +64,11 @@
             </CFormGroup>
           </CCol>
           <CCol sm="6">
-            <CInput label="Người tạo" :value="document.creator.name" readonly class="mb-0" />
+            <CInput label="Автор" :value="document.creator.name" readonly class="mb-0" />
           </CCol>
         </CRow>
         <CTextarea
-          label="Trích yếu"
+          label="Краткое содержание"
           placeholder="Content..."
           rows="5"
           :value.sync="document.abstract"
@@ -78,7 +78,7 @@
             <CFormGroup class="form-group mb-0">
               <template #label>
                 <slot name="label">
-                  <label>Nơi ban hành</label>
+                  <label>Место выдачи</label>
                 </slot>
               </template>
               <template #input>
@@ -93,7 +93,7 @@
           </CCol>
           <CCol sm="6">
             <CInput
-              :label="isIncome ? 'Ngày nhận' : 'Ngày ban hành'"
+              :label="isIncome ? 'Дата получения' : 'Дата выдачи'"
               type="date"
               :value.sync="document.effective_at"
               class="mb-0"
@@ -105,7 +105,7 @@
             <CFormGroup class="form-group mb-0">
               <template #label>
                 <slot name="label">
-                  <label>Người ký</label>
+                  <label>Подписал</label>
                 </slot>
               </template>
               <template #input>
@@ -124,7 +124,7 @@
             </CFormGroup>
           </CCol>
           <CCol sm="6">
-            <CInput label="Ngày ký" type="date" :value.sync="document.sign_at" class="mb-0" />
+            <CInput label="Дата подписания" type="date" :value.sync="document.sign_at" class="mb-0" />
           </CCol>
         </CRow>
       </CForm>
@@ -140,7 +140,7 @@
         <CIcon name="cil-check" />Lưu
       </CButton>
       <CButton v-else size="sm" @click="createDocument" class="float-right" color="success">
-        <CIcon name="cil-plus" />Tạo
+        <CIcon name="cil-plus" />Создать
       </CButton>
     </CCardFooter>
   </CCard>
@@ -290,7 +290,7 @@ export default {
         .create(this.document)
         .then(response => {
           this.$router.push({ path: `/documents/${response.data.id}` });
-          this.$toast.success("Đã tạo văn bản");
+          this.$toast.success("Уже создал документ");
         })
         .catch(error => {
           this.toastHttpError(error);

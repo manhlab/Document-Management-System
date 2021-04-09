@@ -5,9 +5,9 @@
         <CWidgetBrand
           color="white"
           :right-header="''+book.unread"
-          right-footer="Chưa xem"
+          right-footer="Непрочитанные"
           :left-header="''+book.count"
-          left-footer="Đã nhận"
+          left-footer="Полученные"
         >
           <h3 style="color:#3c4b64" class="m-3">{{book.name}}</h3>
         </CWidgetBrand>
@@ -17,7 +17,7 @@
       <CCol col="12">
         <CCard>
           <CCardHeader>
-            <CIcon name="cil-grid" /> Văn bản gần đây
+            <CIcon name="cil-grid" /> Недавно смотреть
           </CCardHeader>
           <CCardBody class="p-0">
             <CDataTable
@@ -83,14 +83,14 @@ export default {
     },
     fields() {
       return [
-        { key: "symbol", label: "Số ký hiệu" },
+        { key: "symbol", label: "Номер регистрации" },
         {
           key: "abstract",
-          label: "Trích yếu",
+          label: "Краткое содержание",
           _classes: "w-50 font-weight-bold",
         },
-        { key: "type", label: "Loại" },
-        { key: "book", label: "Sổ" },
+        { key: "type", label: "Тип документа" },
+        { key: "book", label: "Книга" },
       ];
     },
     highlightStyle() {

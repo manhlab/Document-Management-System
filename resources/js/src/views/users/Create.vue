@@ -3,13 +3,13 @@
     <CCol col="md-6">
       <CCard>
         <CCardHeader>
-          <strong>Tạo mới người dùng</strong>
+          <strong>Создать новый пользователь</strong>
         </CCardHeader>
         <CCardBody>
           <CForm>
             <CInput
               placeholder="Let us know your full name."
-              label="Tên"
+              label="Имя"
               :value.sync="user.name"
               horizontal
             />
@@ -22,22 +22,22 @@
               autocomplete="email"
             />
             <CInput
-              label="Số điện thoại"
+              label="Номер телефон"
               placeholder="Enter your tel"
               :value.sync="user.tel"
               horizontal
               autocomplete="tel"
             />
-            <CInput label="Ngày sinh" type="date" :value.sync="user.birthday" horizontal />
+            <CInput label="Дата рождения" type="date" :value.sync="user.birthday" horizontal />
             <CSelect
-              label="Chức danh"
+              label="Должность"
               horizontal
               :value.sync="user.title_id"
               :options="titles"
               placeholder="Please select"
             />
             <CSelect
-              label="Phòng ban"
+              label="Подразделение"
               horizontal
               :value.sync="user.department_id"
               :options="departments"
@@ -46,7 +46,7 @@
             <CFormGroup class="form-group form-row">
               <template #label>
                 <slot name="label">
-                  <label class="col-form-label col-sm-3">Kích hoạt</label>
+                  <label class="col-form-label col-sm-3">Активирован</label>
                 </slot>
               </template>
               <template #input>
@@ -55,15 +55,15 @@
             </CFormGroup>
             <hr />
             <CInput
-              placeholder="Nhập mật khẩu."
-              label="Mật khẩu"
+              placeholder="Вводите пароль."
+              label="Пароль"
               type="password"
               :value.sync="user.password"
               horizontal
             />
             <CInput
               placeholder="Nhập lại mật khẩu."
-              label="Xác nhận"
+              label="Подтверждить"
               type="password"
               :value.sync="user.password_confirmation"
               horizontal
@@ -72,7 +72,7 @@
         </CCardBody>
         <CCardFooter>
           <CButton size="sm" @click="createUser" class="float-right" color="success">
-            <CIcon name="cil-medical-cross" /> Tạo
+            <CIcon name="cil-medical-cross" /> Создать
           </CButton>
         </CCardFooter>
       </CCard>
@@ -117,7 +117,7 @@ export default {
         .create(this.user)
         .then(response => {
           this.$router.push({ path: `/users/${response.data.id}` });
-          this.$toast.success("Đã tạo tài khoản");
+          this.$toast.success("Аккаунт создан");
         })
         .catch(error => {
           this.toastHttpError(error);

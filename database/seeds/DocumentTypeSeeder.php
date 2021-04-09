@@ -12,13 +12,13 @@ class DocumentTypeSeeder extends Seeder
     public function run()
     {
         DB::table('document_types')->insert([
-            ['id' => 'BC', 'name' => 'Báo cáo'],
-            ['id' => 'CV', 'name' => 'Công văn'],
-            ['id' => 'HD', 'name' => 'Hướng dẫn'],
-            ['id' => 'KH', 'name' => 'Kế hoạch'],
-            ['id' => 'NQ', 'name' => 'Nghị quyết'],
-            ['id' => 'ND', 'name' => 'Nghị định'],
-            ['id' => 'QD', 'name' => 'Quyết định'],
+            ['id' => 'BC', 'name' => 'Отчет'],
+            ['id' => 'CV', 'name' => 'Приказ'],
+            ['id' => 'HD', 'name' => 'Интрукция'],
+            ['id' => 'KH', 'name' => 'Справка'],
+            ['id' => 'NQ', 'name' => 'Положение'],
+            ['id' => 'ND', 'name' => 'Заявление'],
+            ['id' => 'QD', 'name' => 'Договор'],
         ]);
     }
 }

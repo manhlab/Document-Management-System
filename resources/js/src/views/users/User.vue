@@ -10,7 +10,7 @@
     </CRow>
       <CCard>
         <CCardHeader>
-          <strong>Phân quyền</strong>
+          <strong>Право</strong>
         </CCardHeader>
         <CCardBody>
           <CRow>

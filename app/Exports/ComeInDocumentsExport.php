@@ -9,12 +9,12 @@ class ComeInDocumentsExport extends BaseDocumentsExport
     public function headings(): array
     {
         return [
-            'Ngày nhận',
-            'Nơi ban hành',
+            'Дата получения',
+            'Место выдачи',
             'Ký hiệu',
-            'Loại',
-            'Trích yếu',
-            'Người nhận',
+            'Тип документа',
+            'Краткое содержание',
+            'Получатель',
         ];
     }
 

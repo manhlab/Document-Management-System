@@ -43,14 +43,14 @@ implements
     public function headings(): array
     {
         return [
-            'Mã',
-            'Tên',
-            'Email',
-            'Số điện thoại',
-            'Ngày sinh',
-            'Chức danh',
-            'Phòng ban',
-            'Kích hoạt',
+            'Код',
+            'Имя',
+            'Электронный адрес',
+            'Номер телефон',
+            'Дата рождения',
+            'Должность',
+            'Подразделение',
+            'Активирован',
         ];
     }
 
@@ -70,7 +70,7 @@ implements
 
     public function title(): string
     {
-        return 'Danh sách người dùng';
+        return 'Список пользавателя';
     }
 
     public function startCell(): string

@@ -4,7 +4,7 @@
       <CSelect :options="fields" @update:value="fieldChanged" />
     </CCol>
     <CCol sm="9">
-      <CInput placeholder="Tìm kiếm" :value.sync="value" @update:value="valueChanged" />
+      <CInput placeholder="Искать" :value.sync="value" @update:value="valueChanged" />
     </CCol>
   </CRow>
 </template>
@@ -16,7 +16,7 @@ export default {
     fields: {
       type: Array,
       default: function () {
-        return [{ value: "", label: "Tất cả" }];
+        return [{ value: "", label: "Все" }];
       },
     },
   },

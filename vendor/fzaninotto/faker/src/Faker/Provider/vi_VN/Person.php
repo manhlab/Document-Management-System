@@ -144,7 +144,7 @@ class Person extends \Faker\Provider\Person
         'Hoa', 'Hoàng', 'Huỳnh', 'Hy', 'Hà', 'Hàn', 'Hàng', 'Hán', 'Hình', 'Hùng', 'Hạ', 'Hồ', 'Hồng', 'Hứa',
         'Kha', 'Khoa', 'Khu', 'Khuất', 'Khâu', 'Khúc', 'Khưu', 'Khương', 'Khổng', 'Kim', 'Kiều',
         'La', 'Liễu', 'Lâm', 'Lã', 'Lê', 'Lò', 'Lô', 'Lý', 'Lư', 'Lưu', 'Lương', 'Lạc', 'Lại', 'Lều', 'Lỡ', 'Lục', 'Lữ', 'Lỳ',
-        'Ma', 'Mai', 'Mang', 'Mâu', 'Mã', 'Mạc', 'Mạch', 'Mẫn', 'Mộc',
+        'Ma', 'Mai', 'Mang', 'Mâu', 'Код', 'Mạc', 'Mạch', 'Mẫn', 'Mộc',
         'Nghiêm', 'Nghị', 'Nguyễn', 'Ngân', 'Ngô', 'Ngụy', 'Nhiệm', 'Nhâm', 'Nhậm', 'Nhữ', 'Ninh', 'Nông',
         'Ong',
         'Ông',

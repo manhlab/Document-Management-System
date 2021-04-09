@@ -9,11 +9,11 @@ class PrivateDocumentsExport extends BaseDocumentsExport
     public function headings(): array
     {
         return [
-            'Ngày ban hành',
+            'Дата выдачи',
             'Ký hiệu',
-            'Loại',
-            'Trích yếu',
-            'Người nhận',
+            'Тип документа',
+            'Краткое содержание',
+            'Получатель',
         ];
     }
 

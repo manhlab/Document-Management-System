@@ -30,13 +30,13 @@ __webpack_require__.r(__webpack_exports__);
     return {
       fields: [{
         key: "id",
-        label: "Mã"
+        label: "Код"
       }, {
         key: "name",
-        label: "Tên"
+        label: "Имя"
       }],
       service: _services_factory__WEBPACK_IMPORTED_MODULE_0__["default"].publisher,
-      title: "Nơi ban hành"
+      title: "Место выдачи"
     };
   }
 });

@@ -1,7 +1,7 @@
 <template>
   <CCard>
     <CCardHeader>
-      <strong>Tệp đính kèm</strong>
+      <strong>Вложения файлов</strong>
     </CCardHeader>
     <CCardBody>
       <CDataTable :loading="loading" :items="attachments" :fields="fields">
@@ -40,10 +40,10 @@ export default {
     return {
       loading: true,
       fields: [
-        { key: "name", label: "Tên", _classes: "w-50" },
-        { key: "size", label: "Kích thước (KB)" },
-        { key: "downloads", label: "Lượt tải" },
-        { key: "id", label: "Hành động" }
+        { key: "name", label: "Имя", _classes: "w-50" },
+        { key: "size", label: "Размер(KB)" },
+        { key: "downloads", label: "Количество скачиваний" },
+        { key: "id", label: "Действие" }
       ],
       attachments: [
         {
@@ -85,7 +85,7 @@ export default {
         .download(item.id, item.name)
         .then(response => {
           item.downloads++;
-          this.$toast.success("Đã tải xuống");
+          this.$toast.success("Downloaded");
         })
         .catch(error => {
           this.toastHttpError(error);
@@ -118,7 +118,7 @@ export default {
         })
         .then(response => {
           this.attachments.push(response.data);
-          this.$toast.success("Đã tải lên");
+          this.$toast.success("Uploaded");
         })
         .catch(error => {
           this.toastHttpError(error);

@@ -49,8 +49,8 @@ class DocumentReceived extends Notification implements ShouldQueue
         return (new MailMessage)
                     ->subject($this->document->type->name)
                     ->greeting($this->document->type->name)
-                    ->line('Trích yếu: '. $this->document->abstract)
-                    ->action('Chi tiết', url($this->getPathToDocument()));
+                    ->line('Краткое содержание: '. $this->document->abstract)
+                    ->action('Деталь', url($this->getPathToDocument()));
     }
 
     /**

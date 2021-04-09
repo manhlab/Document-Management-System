@@ -584,7 +584,7 @@ var render = function() {
   return _c(
     "CCard",
     [
-      _c("CCardHeader", [_c("strong", [_vm._v("Thông tin")])]),
+      _c("CCardHeader", [_c("strong", [_vm._v("Информация")])]),
       _vm._v(" "),
       _c(
         "CCardBody",
@@ -594,7 +594,7 @@ var render = function() {
             [
               _c("CInput", {
                 attrs: {
-                  label: "Mã",
+                  label: "Код",
                   value: _vm.user.id,
                   horizontal: "",
                   readonly: true
@@ -609,7 +609,7 @@ var render = function() {
               _c("CInput", {
                 attrs: {
                   placeholder: "Let us know your full name.",
-                  label: "Tên",
+                  label: "Имя",
                   value: _vm.user.name,
                   horizontal: ""
                 },
@@ -638,7 +638,7 @@ var render = function() {
               _vm._v(" "),
               _c("CInput", {
                 attrs: {
-                  label: "Số điện thoại",
+                  label: "Номер телефон",
                   placeholder: "Enter your tel",
                   value: _vm.user.tel,
                   horizontal: "",
@@ -653,7 +653,7 @@ var render = function() {
               _vm._v(" "),
               _c("CInput", {
                 attrs: {
-                  label: "Ngày sinh",
+                  label: "Дата рождения",
                   type: "date",
                   value: _vm.user.birthday,
                   horizontal: ""
@@ -667,7 +667,7 @@ var render = function() {
               _vm._v(" "),
               _c("CSelect", {
                 attrs: {
-                  label: "Chức danh",
+                  label: "Должность",
                   horizontal: "",
                   value: _vm.user.title_id,
                   options: _vm.titles,
@@ -682,7 +682,7 @@ var render = function() {
               _vm._v(" "),
               _c("CSelect", {
                 attrs: {
-                  label: "Phòng ban",
+                  label: "Подразделение",
                   horizontal: "",
                   value: _vm.user.department_id,
                   options: _vm.departments,
@@ -707,7 +707,7 @@ var render = function() {
                             _c(
                               "label",
                               { staticClass: "col-form-label col-sm-3" },
-                              [_vm._v("Kích hoạt")]
+                              [_vm._v("Активирован")]
                             )
                           ])
                         ]
@@ -794,7 +794,7 @@ var render = function() {
   return _c(
     "CCard",
     [
-      _c("CCardHeader", [_c("strong", [_vm._v("Thay đổi mật khẩu")])]),
+      _c("CCardHeader", [_c("strong", [_vm._v("Измененить пароль")])]),
       _vm._v(" "),
       _c(
         "CCardBody",
@@ -804,8 +804,8 @@ var render = function() {
             [
               _c("CInput", {
                 attrs: {
-                  placeholder: "Nhập mật khẩu.",
-                  label: "Mật khẩu",
+                  placeholder: "Вводите пароль.",
+                  label: "Пароль",
                   type: "password",
                   horizontal: ""
                 }
@@ -813,8 +813,8 @@ var render = function() {
               _vm._v(" "),
               _c("CInput", {
                 attrs: {
-                  placeholder: "Nhập mật khẩu mới.",
-                  label: "Mật khẩu mới",
+                  placeholder: "Вводите новый пароль.",
+                  label: "Новый пароль",
                   type: "password",
                   value: _vm.password.password,
                   horizontal: ""
@@ -828,8 +828,8 @@ var render = function() {
               _vm._v(" "),
               _c("CInput", {
                 attrs: {
-                  placeholder: "Nhập lại mật khẩu mới.",
-                  label: "Xác nhận",
+                  placeholder: "Подтверждение пароля.",
+                  label: "Подтверждить",
                   type: "password",
                   value: _vm.password.password_confirmation,
                   horizontal: ""
@@ -904,7 +904,7 @@ var render = function() {
         "CCol",
         { attrs: { sm: "12" } },
         [
-          _c("label", [_vm._v("Phân theo chức năng")]),
+          _c("label", [_vm._v("По функциям")]),
           _vm._v(" "),
           _c("treeselect", {
             attrs: {
@@ -958,7 +958,7 @@ var render = function() {
         "CCol",
         { attrs: { sm: "12" } },
         [
-          _c("label", [_vm._v("Phân theo nhóm")]),
+          _c("label", [_vm._v("По группам")]),
           _vm._v(" "),
           _c("treeselect", {
             attrs: {

@@ -5,11 +5,11 @@
       color="info"
       @click="goProfile"
       variant="outline"
-      v-c-tooltip="'Thông tin cá nhân'"
+      v-c-tooltip="'Персональная информация'"
     >
       <CIcon name="cil-user" class="m-0" />
     </CButton>
-    <CButton size="sm" color="danger" @click="logout" variant="outline" v-c-tooltip="'Đăng xuất'">
+    <CButton size="sm" color="danger" @click="logout" variant="outline" v-c-tooltip="'Выход'">
       <CIcon name="cil-power-standby" class="m-0" />
     </CButton>
   </div>

@@ -4,7 +4,7 @@ export default [
     _children: [
       {
         _name: 'CSidebarNavItem',
-        name: 'Trang chủ',
+        name: 'Домашняя страница',
         to: '/dashboard',
         icon: 'cil-home',
       },

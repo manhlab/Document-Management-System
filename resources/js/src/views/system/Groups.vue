@@ -8,7 +8,7 @@
         @show="fetchRolePermissions"
       >
         <template #append-body>
-          <label>Quyền</label>
+          <label>Разрешение</label>
           <treeselect
             @select="addPermission"
             @deselect="removePermission"
@@ -38,11 +38,11 @@ export default {
   data() {
     return {
       fields: [
-        { key: "id", label: "Mã" },
-        { key: "name", label: "Tên" },
+        { key: "id", label: "Код" },
+        { key: "name", label: "Имя" },
       ],
       service: services.role,
-      title: "Nhóm",
+      title: "Группа",
       permissionOptions: [],
       permissions: [],
       role: {}

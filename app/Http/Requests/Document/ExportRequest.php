@@ -13,7 +13,7 @@ class ExportRequest extends FormRequest
      */
     public function authorize()
     {
-        return $this->user()->hasPermissionTo('Báo cáo thống kê');
+        return $this->user()->hasPermissionTo('Статистическая');
     }
 
     /**

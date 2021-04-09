@@ -18,12 +18,12 @@ export default {
   data() {
     return {
       fields: [
-        { key: "id", label: "Mã" },
-        { key: "name", label: "Tên" },
-        { key: "tel", label: "Số điện thoại" }
+        { key: "id", label: "Код" },
+        { key: "name", label: "Имя" },
+        { key: "tel", label: "Номер телефон" }
       ],
       service: services.department,
-      title: "Phòng ban"
+      title: "Подразделение"
     };
   }
 };

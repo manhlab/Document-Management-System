@@ -168,7 +168,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                     path: "/users/".concat(response.data.id)
                   });
 
-                  _this2.$toast.success("Đã tạo tài khoản");
+                  _this2.$toast.success("Аккаунт создан");
                 })["catch"](function (error) {
                   _this2.toastHttpError(error);
                 });
@@ -211,7 +211,7 @@ var render = function() {
           _c(
             "CCard",
             [
-              _c("CCardHeader", [_c("strong", [_vm._v("Tạo mới người dùng")])]),
+              _c("CCardHeader", [_c("strong", [_vm._v("Создать новый пользователь")])]),
               _vm._v(" "),
               _c(
                 "CCardBody",
@@ -222,7 +222,7 @@ var render = function() {
                       _c("CInput", {
                         attrs: {
                           placeholder: "Let us know your full name.",
-                          label: "Tên",
+                          label: "Имя",
                           value: _vm.user.name,
                           horizontal: ""
                         },
@@ -251,7 +251,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("CInput", {
                         attrs: {
-                          label: "Số điện thoại",
+                          label: "Номер телефон",
                           placeholder: "Enter your tel",
                           value: _vm.user.tel,
                           horizontal: "",
@@ -266,7 +266,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("CInput", {
                         attrs: {
-                          label: "Ngày sinh",
+                          label: "Дата рождения",
                           type: "date",
                           value: _vm.user.birthday,
                           horizontal: ""
@@ -280,7 +280,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("CSelect", {
                         attrs: {
-                          label: "Chức danh",
+                          label: "Должность",
                           horizontal: "",
                           value: _vm.user.title_id,
                           options: _vm.titles,
@@ -295,7 +295,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("CSelect", {
                         attrs: {
-                          label: "Phòng ban",
+                          label: "Подразделение",
                           horizontal: "",
                           value: _vm.user.department_id,
                           options: _vm.departments,
@@ -322,7 +322,7 @@ var render = function() {
                                       {
                                         staticClass: "col-form-label col-sm-3"
                                       },
-                                      [_vm._v("Kích hoạt")]
+                                      [_vm._v("Активирован")]
                                     )
                                   ])
                                 ]
@@ -363,8 +363,8 @@ var render = function() {
                       _vm._v(" "),
                       _c("CInput", {
                         attrs: {
-                          placeholder: "Nhập mật khẩu.",
-                          label: "Mật khẩu",
+                          placeholder: "Вводите пароль.",
+                          label: "Пароль",
                           type: "password",
                           value: _vm.user.password,
                           horizontal: ""
@@ -379,7 +379,7 @@ var render = function() {
                       _c("CInput", {
                         attrs: {
                           placeholder: "Nhập lại mật khẩu.",
-                          label: "Xác nhận",
+                          label: "Подтверждить",
                           type: "password",
                           value: _vm.user.password_confirmation,
                           horizontal: ""
@@ -413,7 +413,7 @@ var render = function() {
                     },
                     [
                       _c("CIcon", { attrs: { name: "cil-medical-cross" } }),
-                      _vm._v(" Tạo\n        ")
+                      _vm._v(" Создать\n        ")
                     ],
                     1
                   )

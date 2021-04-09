@@ -12,11 +12,11 @@ class TitleSeeder extends Seeder
     public function run()
     {
         DB::table('titles')->insert([
-            ['id' => 'GD', 'name' => 'Giám đốc'],
-            ['id' => 'PGD', 'name' => 'Phó giám đốc'],
-            ['id' => 'TP', 'name' => 'Trưởng phòng'],
-            ['id' => 'PP', 'name' => 'Phó phòng'],
-            ['id' => 'CV', 'name' => 'Chuyên viên'],
+            ['id' => 'GD', 'name' => 'Директор'],
+            ['id' => 'PGD', 'name' => 'ЗамДиректор'],
+            ['id' => 'TP', 'name' => 'Менеджер'],
+            ['id' => 'PP', 'name' => 'ЗамМенеджер'],
+            ['id' => 'CV', 'name' => 'Ведущий специалист'],
         ]);
     }
 }

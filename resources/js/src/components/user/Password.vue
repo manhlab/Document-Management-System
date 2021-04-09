@@ -1,21 +1,21 @@
 <template>
   <CCard>
     <CCardHeader>
-      <strong>Thay đổi mật khẩu</strong>
+      <strong>Измененить пароль</strong>
     </CCardHeader>
     <CCardBody>
       <CForm>
-        <CInput placeholder="Nhập mật khẩu." label="Mật khẩu" type="password" horizontal />
+        <CInput placeholder="Вводите пароль." label="Пароль" type="password" horizontal />
         <CInput
-          placeholder="Nhập mật khẩu mới."
-          label="Mật khẩu mới"
+          placeholder="Вводите новый пароль."
+          label="Новый пароль"
           type="password"
           :value.sync="password.password"
           horizontal
         />
         <CInput
-          placeholder="Nhập lại mật khẩu mới."
-          label="Xác nhận"
+          placeholder="Подтверждение пароля."
+          label="Подтверждить"
           type="password"
           :value.sync="password.password_confirmation"
           horizontal

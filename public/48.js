@@ -30,16 +30,16 @@ __webpack_require__.r(__webpack_exports__);
     return {
       fields: [{
         key: "id",
-        label: "Mã"
+        label: "Код"
       }, {
         key: "name",
-        label: "Tên"
+        label: "Имя"
       }, {
         key: "tel",
-        label: "Số điện thoại"
+        label: "Номер телефон"
       }],
       service: _services_factory__WEBPACK_IMPORTED_MODULE_0__["default"].department,
-      title: "Phòng ban"
+      title: "Подразделение"
     };
   }
 });

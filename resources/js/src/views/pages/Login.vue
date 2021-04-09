@@ -6,7 +6,7 @@
           <CCard class="p-4 px-5">
             <CCardBody>
               <CForm>
-                <h1 class="pb-4">Đăng nhập</h1>
+                <h1 class="pb-4">Войти</h1>
                 <CAlert :show="!!error" color="warning">{{error}}</CAlert>
                 <CInput autocomplete="email" placeholder="Email or Username..." v-model="email" required>
                   <template #prepend-content>
@@ -25,10 +25,10 @@
                 </CInput>
                 <CRow>
                   <CCol col="6" class="text-left">
-                    <CButton color="primary" @click="login">Đăng nhập</CButton>
+                    <CButton color="primary" @click="login">Войти</CButton>
                   </CCol>
                   <CCol col="6" class="text-right">
-                    <CButton color="link">Quên mật khẩu?</CButton>
+                    <CButton color="link">Забыли пароль?</CButton>
                   </CCol>
                 </CRow>
               </CForm>
@@ -56,11 +56,11 @@ export default {
         .dispatch("auth/login", { email: this.email, password: this.password })
         .then(response => {
           this.$router.push(
-            this.$route.query.redirectFrom || { name: "Trang chủ" }
+            this.$route.query.redirectFrom || { name: "Домашняя страница" }
           );
         })
         .then(response => {
-          this.$toast.success("Đăng nhập thành công");
+          this.$toast.success("Успешно войти");
         })
         .catch(error => {
           this.toastHttpError(error);

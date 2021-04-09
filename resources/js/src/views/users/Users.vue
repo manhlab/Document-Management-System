@@ -3,14 +3,14 @@
     <CCol col="12">
       <CCard>
         <CCardHeader>
-          <CIcon name="cil-grid" />Danh sách người dùng
+          <CIcon name="cil-grid" />Список пользавателя
           <CButton
             size="sm"
             @click="createUser"
             class="float-right"
             color="primary"
             variant="outline"
-            v-c-tooltip="'Tạo mới'"
+            v-c-tooltip="'Создать новый'"
           >
             <CIcon name="cil-user-follow" />
           </CButton>
@@ -20,7 +20,7 @@
             class="float-right mr-2"
             color="primary"
             variant="outline"
-            v-c-tooltip="'Xuất'"
+            v-c-tooltip="'Export'"
           >
             <CIcon name="cil-vertical-align-bottom" />
           </CButton>
@@ -30,7 +30,7 @@
             class="float-right mr-2"
             color="primary"
             variant="outline"
-            v-c-tooltip="'Nhập'"
+            v-c-tooltip="'Import'"
           >
             <CIcon name="cil-vertical-align-top" />
           </CButton>
@@ -52,10 +52,10 @@
             @row-clicked="rowClicked"
           >
             <template #title="{item}">
-              <td>{{item.title ? item.title.name : 'Chưa xác định'}}</td>
+              <td>{{item.title ? item.title.name : 'Неопределено'}}</td>
             </template>
             <template #department="{item}">
-              <td>{{item.department ? item.department.name : 'Chưa xác định'}}</td>
+              <td>{{item.department ? item.department.name : 'Неопределено'}}</td>
             </template>
           </CDataTable>
           <CPagination
@@ -84,23 +84,23 @@ export default {
       loading: true,
       items: null,
       fields: [
-        { key: "id", label: "Mã" },
-        { key: "name", label: "Tên", _classes: "font-weight-bold" },
+        { key: "id", label: "Код" },
+        { key: "name", label: "Имя", _classes: "font-weight-bold" },
         { key: "email", label: "Email" },
-        { key: "tel", label: "Số điện thoại" },
-        { key: "title", label: "Chức danh" },
-        { key: "department", label: "Phòng ban" }
+        { key: "tel", label: "Номер телефон" },
+        { key: "title", label: "Должность" },
+        { key: "department", label: "Подразделение" }
       ],
       searchFields: [
-        { value: "", label: "Tất cả" },
-        { value: "id", label: "Mã" },
-        { value: "name", label: "Tên" },
+        { value: "", label: "Все" },
+        { value: "id", label: "Код" },
+        { value: "name", label: "Имя" },
         { value: "email", label: "Email" },
-        { value: "tel", label: "Số điện thoại" },
-        { value: "birthday", label: "Ngày sinh" },
-        { value: "title.name", label: "Chức danh" },
-        { value: "department.name", label: "Phòng ban" },
-        { value: "created_at", label: "Ngày tạo" }
+        { value: "tel", label: "Номер телефон" },
+        { value: "birthday", label: "Дата рождения" },
+        { value: "title.name", label: "Должность" },
+        { value: "department.name", label: "Подразделение" },
+        { value: "created_at", label: "Дата создания" }
       ],
       currentPage: 1,
       pages: 0,
@@ -214,7 +214,7 @@ export default {
           searchFields: this.searchField
         })
         .then(response => {
-          this.$toast.success("Đã xuất");
+          this.$toast.success("Exported");
         })
         .catch(error => {
           this.toastHttpError(error);

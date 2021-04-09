@@ -16,7 +16,7 @@ class CreateRequest extends FormRequest
     public function authorize()
     {
         $typeName = Str::lower(Book::find($this->book_id)->name);
-        return $this->user()->hasPermissionTo('Quản lý '. $typeName);
+        return $this->user()->hasPermissionTo('Разрешении '. $typeName);
     }
 
     /**

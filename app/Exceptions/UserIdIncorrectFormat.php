@@ -24,6 +24,6 @@ class UserIdIncorrectFormat extends Exception
      */
     public function render($request)
     {
-        return $this->respondError("Mã người dùng " . $this->user->id . " không đúng định dạng.", 500);
+        return $this->respondError("Код пользователя " . $this->user->id . " Неправилный Формат", 500);
     }
 }

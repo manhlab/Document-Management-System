@@ -103,7 +103,7 @@ var render = function() {
       _c(
         "CCard",
         [
-          _c("CCardHeader", [_c("strong", [_vm._v("Phân quyền")])]),
+          _c("CCardHeader", [_c("strong", [_vm._v("Право")])]),
           _vm._v(" "),
           _c(
             "CCardBody",

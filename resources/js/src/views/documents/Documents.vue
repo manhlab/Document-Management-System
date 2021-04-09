@@ -3,14 +3,14 @@
     <CCol col="12">
       <CCard>
         <CCardHeader>
-          <CIcon name="cil-grid" />Danh sách văn bản
+          <CIcon name="cil-grid" />Книга
           <CButton
             size="sm"
             @click="goCreate"
             class="float-right"
             color="primary"
             variant="outline"
-            v-c-tooltip="'Tạo mới'"
+            v-c-tooltip="'Создать новый'"
           >
             <CIcon name="cil-plus" />
           </CButton>
@@ -137,36 +137,36 @@ export default {
     },
     fields() {
       return [
-        { key: "symbol", label: "Số ký hiệu" },
+        { key: "symbol", label: "Номер регистрации" },
         {
           key: "abstract",
-          label: "Trích yếu",
+          label: "Краткое содержание",
           _classes: "w-50 font-weight-bold",
         },
-        { key: "type", label: "Loại" },
-        { key: "publisher", label: "Nơi ban hành" },
+        { key: "type", label: "Тип документа" },
+        { key: "publisher", label: "Место выдачи" },
         {
           key: "effective_at",
-          label: this.isDocumentsIncome ? "Ngày nhận" : "Ngày ban hành",
+          label: this.isDocumentsIncome ? "Дата получения" : "Дата выдачи",
         },
       ];
     },
     searchFields() {
       return [
-        { value: "symbol", label: "Số ký hiệu" },
-        { value: "abstract", label: "Trích yếu" },
-        { value: "type.name", label: "Loại" },
-        { value: "creator.name", label: "Người soạn" },
-        { value: "signer.name", label: "Người ký" },
+        { value: "symbol", label: "Номер регистрации" },
+        { value: "abstract", label: "Краткое содержание" },
+        { value: "type.name", label: "Тип документа" },
+        { value: "creator.name", label: "Создатель" },
+        { value: "signer.name", label: "Подписал" },
         {
           value: "effective_at",
-          label: this.isDocumentsIncome ? "Ngày nhận" : "Ngày ban hành",
+          label: this.isDocumentsIncome ? "Дата получения" : "Дата выдачи",
         },
-        { value: "sign_at", label: "Ngày ký" },
-        { value: "publisher.name", label: "Nơi ban hành" },
-        { value: "organizes.name", label: "Nơi nhận" },
-        { value: "linkTo.symbol", label: "Liên kết văn bản đến" },
-        { value: "receivers.seen", label: "Chưa xem", defaultValue: 0 },
+        { value: "sign_at", label: "Дата подписания" },
+        { value: "publisher.name", label: "Место выдачи" },
+        { value: "organizes.name", label: "Место получения" },
+        { value: "linkTo.symbol", label: "Разрешении входящие документы" },
+        { value: "receivers.seen", label: "Непрочитанные", defaultValue: 0 },
       ];
     },
     highlightStyle() {

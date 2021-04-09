@@ -12,9 +12,9 @@ class BookSeeder extends Seeder
     public function run()
     {
         DB::table('books')->insert([
-            ['name' => 'Inbox'],
-            ['name' => 'Văn bản đi'],
-            ['name' => 'Văn bản nội bộ'],
+            ['name' => 'Входящие документы'],
+            ['name' => 'Исходящие документы'],
+            ['name' => 'Внутренние документы'],
         ]);
     }
 }

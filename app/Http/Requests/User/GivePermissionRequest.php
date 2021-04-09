@@ -13,7 +13,7 @@ class GivePermissionRequest extends FormRequest
      */
     public function authorize()
     {
-        return $this->user()->hasPermissionTo('Phân quyền');
+        return $this->user()->hasPermissionTo('Право');
     }
 
     /**

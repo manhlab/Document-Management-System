@@ -1,7 +1,7 @@
 <template>
   <CCard>
     <CCardHeader>
-      <strong>Nơi nhận</strong>
+      <strong>Место получения</strong>
     </CCardHeader>
     <CCardBody>
       <CRow class="form-group">

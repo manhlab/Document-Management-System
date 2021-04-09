@@ -12,11 +12,11 @@ class SignerSeeder extends Seeder
     public function run()
     {
         DB::table('signers')->insert([
-            ['name' => 'Nguyễn Thanh Toàn', 'description' => 'Trưởng phòng tài chính'],
-            ['name' => 'Đào Thị Xa', 'description' => 'Giám đốc sở'],
-            ['name' => 'Hoàng Công', 'description' => 'Giám đốc công ty MACD'],
+            ['name' => 'Nguyễn Thanh Toàn', 'description' => 'Главный финансовый директор'],
+            ['name' => 'Đào Thị Xa', 'description' => 'Генеральный директор'],
+            ['name' => 'Hoàng Công', 'description' => 'Руководитель компание'],
             ['name' => 'Nguyễn Công Quân', 'description' => null],
-            ['name' => 'Nguyễn Đức Tiên', 'description' => 'Phó giám đốc điều hành Hải Sơn'],
+            ['name' => 'Nguyễn Đức Tiên', 'description' => 'Замдиректор'],
         ]);
     }
 }

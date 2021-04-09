@@ -18,12 +18,12 @@ export default {
   data() {
     return {
       fields: [
-        { key: "id", label: "Mã" },
-        { key: "name", label: "Tên" },
-        { key: "description", label: "Mô tả" }
+        { key: "id", label: "Код" },
+        { key: "name", label: "Имя" },
+        { key: "description", label: "Описание" }
       ],
       service: services.signer,
-      title: "Người ký"
+      title: "Подписал"
     };
   }
 };

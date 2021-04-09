@@ -99,7 +99,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     title: {
       required: false,
       type: String,
-      "default": "Danh sách"
+      "default": "Список"
     },
     canCreate: {
       required: false,
@@ -254,8 +254,8 @@ var render = function() {
                         {
                           name: "c-tooltip",
                           rawName: "v-c-tooltip",
-                          value: "Tạo mới",
-                          expression: "'Tạo mới'"
+                          value: "Создать новый",
+                          expression: "'Создать новый'"
                         }
                       ],
                       staticClass: "float-right",
@@ -321,7 +321,7 @@ var render = function() {
                         },
                         [
                           _c("CIcon", { attrs: { name: "cil-plus" } }),
-                          _vm._v(" Tạo mới\n      ")
+                          _vm._v(" Создать новый\n      ")
                         ],
                         1
                       )

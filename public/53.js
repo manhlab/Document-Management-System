@@ -30,16 +30,16 @@ __webpack_require__.r(__webpack_exports__);
     return {
       fields: [{
         key: "id",
-        label: "Mã"
+        label: "Код"
       }, {
         key: "name",
-        label: "Tên"
+        label: "Имя"
       }, {
         key: "description",
-        label: "Mô tả"
+        label: "Описание"
       }],
       service: _services_factory__WEBPACK_IMPORTED_MODULE_0__["default"].signer,
-      title: "Người ký"
+      title: "Подписал"
     };
   }
 });

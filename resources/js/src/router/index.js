@@ -162,7 +162,7 @@ function configRoutes () {
     {
       path: '/',
       redirect: '/dashboard',
-      name: 'Trang chủ',
+      name: 'Домашняя страница',
       component: TheContainer,
       meta: {
         authRequired: true
@@ -176,7 +176,7 @@ function configRoutes () {
         {
           path: 'books',
           meta: {
-            label: 'Sổ văn bản',
+            label: 'Документы',
           },
           component: {
             render(c) {
@@ -186,17 +186,17 @@ function configRoutes () {
           children: [
             {
               path: '',
-              name: 'Sổ văn bản',
+              name: 'Документы',
               component: Books
             },
             {
               path: ':book',
-              name: 'Chi tiết sổ',
+              name: 'Детали',
               component: Documents,
               children: [
                 {
                   path: 'documents',
-                  name: 'Danh sách văn bản',
+                  name: 'Книга',
                   component: Documents,
                 },
               ]
@@ -207,7 +207,7 @@ function configRoutes () {
         {
           path: 'documents',
           meta: {
-            label: 'Văn bản',
+            label: 'Документ',
           },
           component: {
             render(c) {
@@ -217,17 +217,17 @@ function configRoutes () {
           children: [
             {
               path: '',
-              name: 'Danh sách',
+              name: 'Список',
               component: Documents
             },
             {
               path: 'create',
-              name: 'Tạo mới',
+              name: 'Создать новый',
               component: DocumentCreate
             },
             {
               path: ':document',
-              name: 'Chi tiết',
+              name: 'Деталь',
               component: Document,
             },
           ]
@@ -235,7 +235,7 @@ function configRoutes () {
         // Statistic
         {
           path: 'statistic',
-          name: 'Thống kê',
+          name: 'Статистическая',
           component: Statistic
         },
 
@@ -279,14 +279,14 @@ function configRoutes () {
           path: 'me',
           name: 'Profile',
           meta: {
-            label: 'Cá nhân'
+            label: 'Личный кабинет'
           },
           component: Me
         },
         {
           path: 'users',
           meta: {
-            label: 'Người dùng'
+            label: 'Пользователь'
           },
           component: {
             render(c) {
@@ -296,13 +296,13 @@ function configRoutes () {
           children: [
             {
               path: '',
-              name: 'Danh sách',
+              name: 'Список',
               component: Users
             },
             {
               path: 'create',
               meta: {
-                label: 'Tạo mới'
+                label: 'Создать новый'
               },
               name: 'Create User',
               component: CreateUser
@@ -310,7 +310,7 @@ function configRoutes () {
             {
               path: ':id',
               meta: {
-                label: 'Chi tiết'
+                label: 'Деталь'
               },
               name: 'User',
               component: User
@@ -319,37 +319,37 @@ function configRoutes () {
         },
         {
           path: 'titles',
-          name: 'Chức danh',
+          name: 'Должность',
           component: Titles
         },
         {
           path: 'departments',
-          name: 'Phòng ban',
+          name: 'Подразделение',
           component: Departments
         },
         {
           path: 'signers',
-          name: 'Người ký',
+          name: 'Подписал',
           component: Signers
         },
         {
           path: 'publishers',
-          name: 'Nơi ban hành',
+          name: 'Место выдачи',
           component: Publishers
         },
         {
           path: 'document-types',
-          name: 'Loại văn bản',
+          name: 'Вид документа',
           component: DocumentTypes
         },
         {
           path: 'roles',
-          name: 'Nhóm',
+          name: 'Группа',
           component: Groups
         },
         {
           path: 'permissions',
-          name: 'Quyền',
+          name: 'Разрешение',
           component: Permissions
         },
         {

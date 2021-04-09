@@ -1,7 +1,7 @@
 <template>
   <CCard>
     <CCardHeader>
-      <strong>Văn bản liên kết</strong>
+      <strong>Связанный документ</strong>
     </CCardHeader>
     <CCardBody>
       <CRow class="form-group">
@@ -22,7 +22,7 @@
           </treeselect>
         </CCol>
         <CCol v-else sm="12">
-          <label>Danh sách đã liên kết</label>
+          <label>Список документа</label>
           <treeselect
             v-model="documentsLinked"
             :options="linkedDocuments"
@@ -121,7 +121,7 @@ export default {
     },
     getSymbol(id) {
       this.fetchSymbol(id);
-      return "Không có quyền truy cập";
+      return "Нет права доступ";
     },
     async fetchSymbol(id) {
       const response = await services.document.get(id);

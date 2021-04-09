@@ -1,7 +1,7 @@
 <template>
   <CCard>
     <CCardHeader>
-      <strong>Người nhận</strong>
+      <strong>Получатель</strong>
       <CBadge
         color="success"
         class="float-right"

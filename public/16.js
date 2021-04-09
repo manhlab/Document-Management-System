@@ -105,17 +105,17 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     fields: function fields() {
       return [{
         key: "symbol",
-        label: "Số ký hiệu"
+        label: "Номер регистрации"
       }, {
         key: "abstract",
-        label: "Trích yếu",
+        label: "Краткое содержание",
         _classes: "w-50 font-weight-bold"
       }, {
         key: "type",
-        label: "Loại"
+        label: "Тип документа"
       }, {
         key: "book",
-        label: "Sổ"
+        label: "Книга"
       }];
     },
     highlightStyle: function highlightStyle() {
@@ -219,9 +219,9 @@ var render = function() {
                   attrs: {
                     color: "white",
                     "right-header": "" + book.unread,
-                    "right-footer": "Chưa xem",
+                    "right-footer": "Непрочитанные",
                     "left-header": "" + book.count,
-                    "left-footer": "Đã nhận"
+                    "left-footer": "Полученные"
                   }
                 },
                 [
@@ -253,7 +253,7 @@ var render = function() {
                     "CCardHeader",
                     [
                       _c("CIcon", { attrs: { name: "cil-grid" } }),
-                      _vm._v(" Văn bản gần đây\n        ")
+                      _vm._v(" Недавно смотреть\n        ")
                     ],
                     1
                   ),

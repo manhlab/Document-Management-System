@@ -13,7 +13,7 @@ class DestroyRequest extends FormRequest
      */
     public function authorize()
     {
-        return $this->user()->hasPermissionTo('Quản lý loại văn bản');
+        return $this->user()->hasPermissionTo('Разрешении вид документа');
     }
 
     /**

@@ -18,11 +18,11 @@ export default {
   data() {
     return {
       fields: [
-        { key: "id", label: "Mã" },
-        { key: "name", label: "Tên" },
+        { key: "id", label: "Код" },
+        { key: "name", label: "Имя" },
       ],
       service: services.publisher,
-      title: "Nơi ban hành"
+      title: "Место выдачи"
     };
   }
 };

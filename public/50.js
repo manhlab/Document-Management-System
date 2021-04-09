@@ -62,13 +62,13 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     return {
       fields: [{
         key: "id",
-        label: "Mã"
+        label: "Код"
       }, {
         key: "name",
-        label: "Tên"
+        label: "Имя"
       }],
       service: _services_factory__WEBPACK_IMPORTED_MODULE_1__["default"].role,
-      title: "Nhóm",
+      title: "Группа",
       permissionOptions: [],
       permissions: [],
       role: {}
@@ -188,7 +188,7 @@ var render = function() {
                 key: "append-body",
                 fn: function() {
                   return [
-                    _c("label", [_vm._v("Quyền")]),
+                    _c("label", [_vm._v("Разрешение")]),
                     _vm._v(" "),
                     _c("treeselect", {
                       attrs: {

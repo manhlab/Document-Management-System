@@ -25,15 +25,15 @@ class DocumentCriteria implements CriteriaInterface
     {
         $model = $model->where(function($model){
             $model = $model->where(function($model){
-                if(auth()->user()->hasPermissionTo('Quản lý văn bản đến')){
+                if(auth()->user()->hasPermissionTo('Разрешении входящие документы')){
                     $model->orWhere('book_id', Book::DEN);
                 }
         
-                if(auth()->user()->hasPermissionTo('Quản lý văn bản đi')){
+                if(auth()->user()->hasPermissionTo('Разрешении исходящие документы')){
                     $model->orWhere('book_id', Book::DI);
                 }
         
-                if(auth()->user()->hasPermissionTo('Quản lý văn bản nội bộ')){
+                if(auth()->user()->hasPermissionTo('Разрешении внутренние документы')){
                     $model->orWhere('book_id', Book::NOIBO);
                 }
             });

@@ -1,7 +1,7 @@
 <template>
   <CRow class="form-group">
     <CCol sm="12">
-      <label>Phân theo chức năng</label>
+      <label>По функциям</label>
       <treeselect
         @select="addPermission"
         @deselect="removePermission"

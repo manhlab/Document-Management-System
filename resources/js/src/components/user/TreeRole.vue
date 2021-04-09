@@ -1,7 +1,7 @@
 <template>
   <CRow class="form-group">
     <CCol sm="12">
-      <label>Phân theo nhóm</label>
+      <label>По группам</label>
       <treeselect
         @select="addRole"
         @deselect="removeRole"

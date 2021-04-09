@@ -59,17 +59,17 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       loading: true,
       fields: [{
         key: "name",
-        label: "Tên",
+        label: "Имя",
         _classes: "w-50"
       }, {
         key: "size",
-        label: "Kích thước (KB)"
+        label: "Размер(KB)"
       }, {
         key: "downloads",
-        label: "Lượt tải"
+        label: "Количество скачиваний"
       }, {
         key: "id",
-        label: "Hành động"
+        label: "Действие"
       }],
       attachments: [{
         id: "",
@@ -130,7 +130,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       _services_factory__WEBPACK_IMPORTED_MODULE_1__["default"].attachment.download(item.id, item.name).then(function (response) {
         item.downloads++;
 
-        _this2.$toast.success("Đã tải xuống");
+        _this2.$toast.success("Downloaded");
       })["catch"](function (error) {
         _this2.toastHttpError(error);
       });
@@ -163,7 +163,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       }).then(function (response) {
         _this4.attachments.push(response.data);
 
-        _this4.$toast.success("Đã tải lên");
+        _this4.$toast.success("Uploaded");
       })["catch"](function (error) {
         _this4.toastHttpError(error);
       });
@@ -362,7 +362,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     },
     getSymbol: function getSymbol(id) {
       this.fetchSymbol(id);
-      return "Không có quyền truy cập";
+      return "Нет права доступ";
     },
     fetchSymbol: function fetchSymbol(id) {
       var _this4 = this;
@@ -1057,7 +1057,7 @@ var render = function() {
   return _c(
     "CCard",
     [
-      _c("CCardHeader", [_c("strong", [_vm._v("Tệp đính kèm")])]),
+      _c("CCardHeader", [_c("strong", [_vm._v("Вложения файлов")])]),
       _vm._v(" "),
       _c(
         "CCardBody",
@@ -1162,7 +1162,7 @@ var render = function() {
   return _c(
     "CCard",
     [
-      _c("CCardHeader", [_c("strong", [_vm._v("Văn bản liên kết")])]),
+      _c("CCardHeader", [_c("strong", [_vm._v("Связанный документ")])]),
       _vm._v(" "),
       _c(
         "CCardBody",
@@ -1223,7 +1223,7 @@ var render = function() {
                     "CCol",
                     { attrs: { sm: "12" } },
                     [
-                      _c("label", [_vm._v("Danh sách đã liên kết")]),
+                      _c("label", [_vm._v("Список документа")]),
                       _vm._v(" "),
                       _c("treeselect", {
                         attrs: {
@@ -1304,7 +1304,7 @@ var render = function() {
       _c(
         "CCardHeader",
         [
-          _c("strong", [_vm._v("Người nhận")]),
+          _c("strong", [_vm._v("Получатель")]),
           _vm._v(" "),
           _c(
             "CBadge",
@@ -1404,7 +1404,7 @@ var render = function() {
   return _c(
     "CCard",
     [
-      _c("CCardHeader", [_c("strong", [_vm._v("Nơi nhận")])]),
+      _c("CCardHeader", [_c("strong", [_vm._v("Место получения")])]),
       _vm._v(" "),
       _c(
         "CCardBody",

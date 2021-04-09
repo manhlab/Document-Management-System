@@ -13,7 +13,7 @@ class UpdateRequest extends FormRequest
      */
     public function authorize()
     {
-        return $this->user()->hasPermissionTo('Quản lý phòng ban');
+        return $this->user()->hasPermissionTo('Разрешении подразделение');
     }
 
     /**

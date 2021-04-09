@@ -454,7 +454,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           path: "/documents/".concat(response.data.id)
         });
 
-        _this8.$toast.success("Đã tạo văn bản");
+        _this8.$toast.success("Уже создал документ");
       })["catch"](function (error) {
         _this8.toastHttpError(error);
       });
@@ -488,8 +488,8 @@ var render = function() {
     [
       _c("CCardHeader", [
         _vm.documentId
-          ? _c("strong", [_vm._v("Chi tiết văn bản")])
-          : _c("strong", [_vm._v("Tạo văn bản")])
+          ? _c("strong", [_vm._v("О документе")])
+          : _c("strong", [_vm._v("Создать документ")])
       ]),
       _vm._v(" "),
       _c(
@@ -509,7 +509,7 @@ var render = function() {
                       _c("CSelect", {
                         staticClass: "mb-0",
                         attrs: {
-                          label: "Sổ văn bản",
+                          label: "Документы",
                           options: _vm.books,
                           value: _vm.document.book_id,
                           placeholder: "Please select"
@@ -537,7 +537,7 @@ var render = function() {
                               fn: function() {
                                 return [
                                   _vm._t("label", [
-                                    _c("label", [_vm._v("Loại văn bản")])
+                                    _c("label", [_vm._v("Вид документа")])
                                   ])
                                 ]
                               },
@@ -588,7 +588,7 @@ var render = function() {
                       _c("CInput", {
                         staticClass: "mb-0",
                         attrs: {
-                          label: "Số ký hiệu",
+                          label: "Номер регистрации",
                           value: _vm.document.symbol
                         },
                         on: {
@@ -621,7 +621,7 @@ var render = function() {
                               fn: function() {
                                 return [
                                   _vm._t("label", [
-                                    _c("label", [_vm._v("Người soạn")])
+                                    _c("label", [_vm._v("Создатель")])
                                   ])
                                 ]
                               },
@@ -687,7 +687,7 @@ var render = function() {
                       _c("CInput", {
                         staticClass: "mb-0",
                         attrs: {
-                          label: "Người tạo",
+                          label: "Автор",
                           value: _vm.document.creator.name,
                           readonly: ""
                         }
@@ -701,7 +701,7 @@ var render = function() {
               _vm._v(" "),
               _c("CTextarea", {
                 attrs: {
-                  label: "Trích yếu",
+                  label: "Краткое содержание",
                   placeholder: "Content...",
                   rows: "5",
                   value: _vm.document.abstract
@@ -730,7 +730,7 @@ var render = function() {
                               fn: function() {
                                 return [
                                   _vm._t("label", [
-                                    _c("label", [_vm._v("Nơi ban hành")])
+                                    _c("label", [_vm._v("Место выдачи")])
                                   ])
                                 ]
                               },
@@ -778,7 +778,7 @@ var render = function() {
                       _c("CInput", {
                         staticClass: "mb-0",
                         attrs: {
-                          label: _vm.isIncome ? "Ngày nhận" : "Ngày ban hành",
+                          label: _vm.isIncome ? "Дата получения" : "Дата выдачи",
                           type: "date",
                           value: _vm.document.effective_at
                         },
@@ -816,7 +816,7 @@ var render = function() {
                               fn: function() {
                                 return [
                                   _vm._t("label", [
-                                    _c("label", [_vm._v("Người ký")])
+                                    _c("label", [_vm._v("Подписал")])
                                   ])
                                 ]
                               },
@@ -879,7 +879,7 @@ var render = function() {
                       _c("CInput", {
                         staticClass: "mb-0",
                         attrs: {
-                          label: "Ngày ký",
+                          label: "Дата подписания",
                           type: "date",
                           value: _vm.document.sign_at
                         },
@@ -928,7 +928,7 @@ var render = function() {
                 },
                 [
                   _c("CIcon", { attrs: { name: "cil-plus" } }),
-                  _vm._v("Tạo\n    ")
+                  _vm._v("Создать\n    ")
                 ],
                 1
               )
