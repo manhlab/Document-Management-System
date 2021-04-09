@@ -10,7 +10,7 @@
             class="float-right"
             color="primary"
             variant="outline"
-            v-c-tooltip="'Создать новый'"
+            v-c-tooltip="'Создать'"
           >
             <CIcon name="cil-plus" />
           </CButton>

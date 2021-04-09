@@ -255,7 +255,7 @@ var render = function() {
                           name: "c-tooltip",
                           rawName: "v-c-tooltip",
                           value: "Создать новый",
-                          expression: "'Создать новый'"
+                          expression: "'Создать'"
                         }
                       ],
                       staticClass: "float-right",

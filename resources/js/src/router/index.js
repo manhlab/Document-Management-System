@@ -222,7 +222,7 @@ function configRoutes () {
             },
             {
               path: 'create',
-              name: 'Создать новый',
+              name: 'Создать',
               component: DocumentCreate
             },
             {
@@ -302,7 +302,7 @@ function configRoutes () {
             {
               path: 'create',
               meta: {
-                label: 'Создать новый'
+                label: 'Создать'
               },
               name: 'Create User',
               component: CreateUser
