@@ -177,7 +177,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       this.service.update(this.itemUpdating, this.itemSelected.id).then(function (response) {
         _this2.isShowDetail = false;
 
-        _this2.$toast.success("Đã lưu");
+        _this2.$toast.success("Сохранено");
 
         _this2.fetchList();
       })["catch"](function (error) {
@@ -337,7 +337,7 @@ var render = function() {
                         },
                         [
                           _c("CIcon", { attrs: { name: "cil-check" } }),
-                          _vm._v(" Lưu\n      ")
+                          _vm._v(" Сохранить\n      ")
                         ],
                         1
                       )

@@ -54,7 +54,7 @@
           color="success"
           @click="onClickSave"
         >
-          <CIcon name="cil-check" /> Lưu
+          <CIcon name="cil-check" /> Сохранить
         </CButton>
         <CButton
           v-if="canDelete && !createMode"
@@ -138,7 +138,7 @@ export default {
         .update(this.itemUpdating, this.itemSelected.id)
         .then(response => {
           this.isShowDetail = false;
-          this.$toast.success("Đã lưu");
+          this.$toast.success("Сохранено");
           this.fetchList();
         })
         .catch(error => {

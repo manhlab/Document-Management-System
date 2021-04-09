@@ -137,7 +137,7 @@
         class="float-right"
         color="success"
       >
-        <CIcon name="cil-check" />Lưu
+        <CIcon name="cil-check" />Сохранить
       </CButton>
       <CButton v-else size="sm" @click="createDocument" class="float-right" color="success">
         <CIcon name="cil-plus" />Создать
@@ -278,7 +278,7 @@ export default {
       await services.document
         .update(this.document, this.documentId)
         .then(response => {
-          this.$toast.success("Đã lưu");
+          this.$toast.success("Сохранено");
           this.$emit("update", response.data);
         })
         .catch(error => {

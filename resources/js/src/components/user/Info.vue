@@ -56,7 +56,7 @@
     </CCardBody>
     <CCardFooter>
       <CButton type="submit" size="sm" @click="updateInfo" class="float-right" color="success">
-        <CIcon name="cil-check" />Lưu
+        <CIcon name="cil-check" />Сохранить
       </CButton>
     </CCardFooter>
   </CCard>
@@ -106,7 +106,7 @@ export default {
       return await (this.isMe ? services.auth : services.user)
         .update(this.user, this.userId)
         .then((response) => {
-          this.$toast.success("Đã lưu");
+          this.$toast.success("Сохранено");
         })
         .catch((error) => {
           this.toastHttpError(error);

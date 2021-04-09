@@ -431,7 +431,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 0:
                 _context7.next = 2;
                 return _services_factory__WEBPACK_IMPORTED_MODULE_1__["default"].document.update(_this7.document, _this7.documentId).then(function (response) {
-                  _this7.$toast.success("Đã lưu");
+                  _this7.$toast.success("Сохранено");
 
                   _this7.$emit("update", response.data);
                 })["catch"](function (error) {
@@ -915,7 +915,7 @@ var render = function() {
                 },
                 [
                   _c("CIcon", { attrs: { name: "cil-check" } }),
-                  _vm._v("Lưu\n    ")
+                  _vm._v("Сохранить\n    ")
                 ],
                 1
               )

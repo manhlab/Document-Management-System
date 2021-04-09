@@ -30,7 +30,7 @@
         class="float-right"
         color="success"
       >
-        <CIcon name="cil-check" />Thay đổi
+        <CIcon name="cil-check" />Изменение
       </CButton>
     </CCardFooter>
   </CCard>
@@ -64,7 +64,7 @@ export default {
       return await (this.isMe ? services.auth : services.user)
         .update(this.password, this.userId)
         .then((response) => {
-          this.$toast.success("Đã thay đổi");
+          this.$toast.success("Измененно");
         })
         .catch((error) => {
           this.toastHttpError(error);
