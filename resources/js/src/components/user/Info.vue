@@ -7,7 +7,7 @@
       <CForm>
         <CInput label="Код" :value.sync="user.id" horizontal :readonly="true" />
         <CInput
-          placeholder="Let us know your full name."
+          placeholder="ФИО "
           label="Имя"
           :value.sync="user.name"
           horizontal

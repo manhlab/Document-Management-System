@@ -63,7 +63,7 @@
           color="danger"
           @click="onClickDelete"
         >
-          <CIcon name="cil-x" /> Xóa
+          <CIcon name="cil-x" /> Удалить
         </CButton>
       </template>
     </CModal>
@@ -167,7 +167,7 @@ export default {
         .delete(this.itemSelected.id)
         .then(response => {
           this.isShowDetail = false;
-          this.$toast.success("Đã xóa");
+          this.$toast.success("Удалено");
           this.fetchList();
         })
         .catch(error => {

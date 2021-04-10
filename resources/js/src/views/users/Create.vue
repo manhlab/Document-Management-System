@@ -8,7 +8,7 @@
         <CCardBody>
           <CForm>
             <CInput
-              placeholder="Let us know your full name."
+              placeholder="ФИО "
               label="Имя"
               :value.sync="user.name"
               horizontal
@@ -62,7 +62,7 @@
               horizontal
             />
             <CInput
-              placeholder="Nhập lại mật khẩu."
+              placeholder="Подтверждение пароля"
               label="Подтверждить"
               type="password"
               :value.sync="user.password_confirmation"

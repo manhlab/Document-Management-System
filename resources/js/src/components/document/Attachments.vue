@@ -96,7 +96,7 @@ export default {
         .delete(id)
         .then(response => {
           this.attachments.splice(index, 1);
-          this.$toast.success("Đã xóa");
+          this.$toast.success("Удалено");
         })
         .catch(error => {
           this.toastHttpError(error);
