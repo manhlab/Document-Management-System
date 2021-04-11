@@ -141,7 +141,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       _services_factory__WEBPACK_IMPORTED_MODULE_1__["default"].attachment["delete"](id).then(function (response) {
         _this3.attachments.splice(index, 1);
 
-        _this3.$toast.success("Đã xóa");
+        _this3.$toast.success("Удалено");
       })["catch"](function (error) {
         _this3.toastHttpError(error);
       });

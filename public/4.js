@@ -608,7 +608,7 @@ var render = function() {
               _vm._v(" "),
               _c("CInput", {
                 attrs: {
-                  placeholder: "Let us know your full name.",
+                  placeholder: "ФИО ",
                   label: "Имя",
                   value: _vm.user.name,
                   horizontal: ""

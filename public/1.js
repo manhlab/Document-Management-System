@@ -208,7 +208,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       this.service["delete"](this.itemSelected.id).then(function (response) {
         _this4.isShowDetail = false;
 
-        _this4.$toast.success("Đã xóa");
+        _this4.$toast.success("Удалено");
 
         _this4.fetchList();
       })["catch"](function (error) {
@@ -353,7 +353,7 @@ var render = function() {
                         },
                         [
                           _c("CIcon", { attrs: { name: "cil-x" } }),
-                          _vm._v(" Xóa\n      ")
+                          _vm._v(" Удалить\n      ")
                         ],
                         1
                       )
