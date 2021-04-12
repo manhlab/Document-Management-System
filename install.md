@@ -2,7 +2,7 @@
 
 ``` bash
 # Clone this project
-git clone https://github.com/ThanhSonITNIC/qlvbdh.git
+git clone https://github.com/manhlab/Document-Management-System.git
 
 # Enter the laradock folder
 cd qlvbdh/laradock
