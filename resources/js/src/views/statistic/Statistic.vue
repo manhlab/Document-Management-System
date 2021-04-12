@@ -129,7 +129,7 @@ export default {
       services.statistic
         .download(this.statistic)
         .then(response => {
-          this.$toast.success("Exported báo cáo");
+          this.$toast.success("Exported отчет");
         })
         .catch(error => {
           this.toastHttpError(error);

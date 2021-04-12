@@ -105,7 +105,7 @@
           <CCardBody>
             <CForm>
               <CInput
-                description="Let us know your full name."
+                description="ФИО"
                 label="Enter your name"
                 horizontal
                 autocomplete="name"

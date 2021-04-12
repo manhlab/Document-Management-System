@@ -6,7 +6,7 @@
     <CCardBody>
       <CRow class="form-group">
         <CCol v-if="isOutcome" sm="12">
-          <label>Inbox</label>
+          <label>Список документа</label>
           <treeselect
             v-model="linkToDocument"
             :multiple="false"

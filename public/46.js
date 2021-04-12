@@ -198,7 +198,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       var _this3 = this;
 
       _services_factory__WEBPACK_IMPORTED_MODULE_1__["default"].statistic.download(this.statistic).then(function (response) {
-        _this3.$toast.success("Exported báo cáo");
+        _this3.$toast.success("Exported отчет");
       })["catch"](function (error) {
         _this3.toastHttpError(error);
       });

@@ -141,7 +141,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       _services_factory__WEBPACK_IMPORTED_MODULE_1__["default"].attachment["delete"](id).then(function (response) {
         _this3.attachments.splice(index, 1);
 
-        _this3.$toast.success("Đã xóa");
+        _this3.$toast.success("Удалено");
       })["catch"](function (error) {
         _this3.toastHttpError(error);
       });
@@ -1176,7 +1176,7 @@ var render = function() {
                     "CCol",
                     { attrs: { sm: "12" } },
                     [
-                      _c("label", [_vm._v("Inbox")]),
+                      _c("label", [_vm._v("Список документа")]),
                       _vm._v(" "),
                       _c("treeselect", {
                         attrs: { multiple: false, options: _vm.documents },

@@ -221,7 +221,7 @@ var render = function() {
                     [
                       _c("CInput", {
                         attrs: {
-                          placeholder: "Let us know your full name.",
+                          placeholder: "ФИО",
                           label: "Имя",
                           value: _vm.user.name,
                           horizontal: ""
@@ -378,7 +378,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("CInput", {
                         attrs: {
-                          placeholder: "Nhập lại mật khẩu.",
+                          placeholder: "Подтверждение пароля",
                           label: "Подтверждить",
                           type: "password",
                           value: _vm.user.password_confirmation,
