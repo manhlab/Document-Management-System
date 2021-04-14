@@ -12,7 +12,7 @@
    <a href="https://raw.githubusercontent.com/laradock/laradock/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license"></a>
 </p>
 
-<p align="center"><b>Full PHP development environment based on Docker.</b></p>
+<p align="center"><b>Full Document Management System based on Docker.</b></p>
 
 <p align="center">
     <a href="http://zalt.me"><img src="http://forthebadge.com/images/badges/built-by-developers.svg" alt="forthebadge" width="180"></a>
@@ -21,20 +21,17 @@
 <br>
 <br>
 
-<h4 align="center" style="color:#7d58c2">Use Docker First - Learn About It Later!</h4>
-
-<p align="center">
-	<a href="http://laradock.io">
-	   <img src="https://raw.githubusercontent.com/laradock/laradock/master/.github/home-page-images/documentation-button.png" width="300px" alt="Laradock Documentation"/>
-	</a>
-</p>
+## What
+Document Management System base on Laradock with PHP Laravel and Vue design. 💜
 
 
-## Join Us
-
-[![Gitter](https://badges.gitter.im/Laradock/laradock.svg)](https://gitter.im/Laradock/laradock?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-[![Gitpod](https://img.shields.io/badge/Gitpod-ready--to--code-blue)](https://gitpod.io/#https://github.com/laradock/laradock)
+## Technical Report
+- Php v7.4
+- Laravel
+- Vue
+- Laradock for docker deployment
+- MySQL for storegement
+- 
 
 ---
 Features
@@ -70,26 +67,13 @@ Features
 
 
 
-## What
-Laradock is an MIT-licensed open source project with its ongoing development made possible entirely by the support of all these smart and generous people, from code contributors to financial contributors. 💜
 
 
 ### Project Maintainers
-
-### Code Contributors
-
-[![Laradock Contributors][contributors-src]][contributors-href]
-
-### Financial Contributors
-
-[![Open Collective backers][backers-src]][backers-href]
-
+- Manhlab (github.com/manhlab)
+- Teluser (github.com/Teluser)
+- pvanh98 (github.com/pvanh98)
 ---
-
-
-## Sponsors
-
-Sponsoring is an act of giving in a different fashion. 🌱
 
 
 
@@ -98,10 +82,9 @@ Contributing
 
 All contributions are more than welcomed. Contributions may close an issue, fix a bug (reported or not reported), improve the existing code, add new feature, and so on.
 
-The `master` branch is the default and base branch for the project. It is used for development and all Pull Requests should go there.
+The `main` branch is the default and base branch for the project. It is used for development and all Pull Requests should go there.
 
 License
 -------
-
-Teedy is released under the terms of the GPL license. See `COPYING` for more
-information or see <http://opensource.org/licenses/GPL-2.0>.
+System is released under the terms of the GPL license. See `COPYING` for more
+information or see <http://opensource.org/licenses/GPL-3.0>.
