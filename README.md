@@ -37,10 +37,40 @@
 [![Gitpod](https://img.shields.io/badge/Gitpod-ready--to--code-blue)](https://gitpod.io/#https://github.com/laradock/laradock)
 
 ---
+Features
+--------
+
+- Responsive user interface
+- Optical character recognition
+- LDAP authentication ![New!](https://www.sismics.com/public/img/new.png)
+- Support image, PDF, ODT, DOCX, PPTX files
+- Video file support
+- Flexible search engine with suggestions and highlighting
+- Full text search in all supported files
+- All [Dublin Core](http://dublincore.org/) metadata
+- Custom user-defined metadata ![New!](https://www.sismics.com/public/img/new.png)
+- Workflow system ![New!](https://www.sismics.com/public/img/new.png)
+- 256-bit AES encryption of stored files
+- File versioning ![New!](https://www.sismics.com/public/img/new.png)
+- Tag system with nesting
+- Import document from email (EML format)
+- Automatic inbox scanning and importing
+- User/group permission system
+- 2-factor authentication
+- Hierarchical groups
+- Audit log
+- Comments
+- Storage quota per user
+- Document sharing by URL
+- RESTful Web API
+- Webhooks to trigger external service
+- Fully featured Android client
+- [Bulk files importer](https://github.com/sismics/docs/tree/master/docs-importer) (single or scan mode)
+- Tested to one million documents
 
 
-## Awesome People
 
+## What
 Laradock is an MIT-licensed open source project with its ongoing development made possible entirely by the support of all these smart and generous people, from code contributors to financial contributors. 💜
 
 
@@ -60,3 +90,18 @@ Laradock is an MIT-licensed open source project with its ongoing development mad
 ## Sponsors
 
 Sponsoring is an act of giving in a different fashion. 🌱
+
+
+
+Contributing
+------------
+
+All contributions are more than welcomed. Contributions may close an issue, fix a bug (reported or not reported), improve the existing code, add new feature, and so on.
+
+The `master` branch is the default and base branch for the project. It is used for development and all Pull Requests should go there.
+
+License
+-------
+
+Teedy is released under the terms of the GPL license. See `COPYING` for more
+information or see <http://opensource.org/licenses/GPL-2.0>.
