@@ -1,0 +1,4 @@
+.env
+laradock/.env
+laradock/env-example
+config/*
