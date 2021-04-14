@@ -1,17 +1,6 @@
 <p align="center">
     <img src="/img/qInlEsuLmF8.jpg" alt="Laradock Logo"/>
 </p>
-
-<p align="center">
-   <a href="http://laradock.io/contributing"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="contributions welcome"></a>
-   <a href="https://github.com/laradock/laradock/network"><img src="https://img.shields.io/github/forks/laradock/laradock.svg" alt="GitHub forks"></a>
-   <a href="https://github.com/laradock/laradock/issues"><img src="https://img.shields.io/github/issues/laradock/laradock.svg" alt="GitHub issues"></a>
-   <a href="https://github.com/laradock/laradock/stargazers"><a href="#backers" alt="sponsors on Open Collective"><img src="https://opencollective.com/laradock/backers/badge.svg" /></a> <a href="#sponsors" alt="Sponsors on Open Collective"><img src="https://opencollective.com/laradock/sponsors/badge.svg" /></a> <img src="https://img.shields.io/github/stars/laradock/laradock.svg" alt="GitHub stars"></a>
-   <a href="https://github.com/laradock/laradock/actions/workflows/main-ci.yml"><img src="https://github.com/laradock/laradock/actions/workflows/main-ci.yml/badge.svg" alt="GitHub CI"></a>
-   <a href="https://travis-ci.org/laradock/laradock"><img src="https://travis-ci.org/laradock/laradock.svg?branch=master" alt="Build status"></a>
-   <a href="https://raw.githubusercontent.com/laradock/laradock/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license"></a>
-</p>
-
 <p align="center"><b>Full Document Management System based on Docker.</b></p>
 
 <p align="center">
@@ -22,8 +11,7 @@
 <br>
 
 ## What
-Document Management System base on Laradock with PHP Laravel and Vue design. 💜
-
+Document Management System base on PHP Laravel and Vue design. 💜
 
 ## Technical Report
 - Php v7.4
@@ -31,8 +19,6 @@ Document Management System base on Laradock with PHP Laravel and Vue design. �
 - Vue
 - Laradock for docker deployment
 - MySQL for storegement
-- 
-
 ---
 Features
 --------
@@ -41,12 +27,9 @@ Features
 - Optical character recognition
 - LDAP authentication ![New!](https://www.sismics.com/public/img/new.png)
 - Support image, PDF, ODT, DOCX, PPTX files
-- Video file support
 - Flexible search engine with suggestions and highlighting
 - Full text search in all supported files
-- All [Dublin Core](http://dublincore.org/) metadata
 - Custom user-defined metadata ![New!](https://www.sismics.com/public/img/new.png)
-- Workflow system ![New!](https://www.sismics.com/public/img/new.png)
 - 256-bit AES encryption of stored files
 - File versioning ![New!](https://www.sismics.com/public/img/new.png)
 - Tag system with nesting
@@ -58,12 +41,11 @@ Features
 - Audit log
 - Comments
 - Storage quota per user
-- Document sharing by URL
-- RESTful Web API
+- Document sharing per user
+- Export information
 - Webhooks to trigger external service
-- Fully featured Android client
-- [Bulk files importer](https://github.com/sismics/docs/tree/master/docs-importer) (single or scan mode)
-- Tested to one million documents
+- Tested to 200 documents
+- Rolement system control 
 
 
 
