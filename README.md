@@ -25,13 +25,10 @@ Features
 
 - Responsive user interface
 - Optical character recognition
-- LDAP authentication ![New!](https://www.sismics.com/public/img/new.png)
 - Support image, PDF, ODT, DOCX, PPTX files
 - Flexible search engine with suggestions and highlighting
 - Full text search in all supported files
 - Custom user-defined metadata ![New!](https://www.sismics.com/public/img/new.png)
-- 256-bit AES encryption of stored files
-- File versioning ![New!](https://www.sismics.com/public/img/new.png)
 - Tag system with nesting
 - Import document from email (EML format)
 - Automatic inbox scanning and importing
