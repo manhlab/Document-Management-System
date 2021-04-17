@@ -26,11 +26,9 @@ Features
 - Responsive user interface
 - Optical character recognition
 - Support image, PDF, ODT, DOCX, PPTX files
-- Flexible search engine with suggestions and highlighting
-- Full text search in all supported files
-- Custom user-defined metadata ![New!](https://www.sismics.com/public/img/new.png)
+- Flexible search engine
 - Tag system with nesting
-- Import document from email (EML format)
+- Import document from xml (EML format)
 - Automatic inbox scanning and importing
 - User/group permission system
 - 2-factor authentication
@@ -42,9 +40,8 @@ Features
 - Export information
 - Webhooks to trigger external service
 - Tested to 200 documents
-- Rolement system control 
-
-
+- Password change
+- Admin site with full access
 
 
 
@@ -57,10 +54,10 @@ Login:
 <p align="center">
     <img src="/img/Screenshot.png" alt="Laradock Logo"/>
 </p>
-User infomation and Change password panel:
 <p align="center">
     <img src="/img/Screenshot (2).png" alt="Laradock Logo"/>
 </p>
+User infomation and Change password panel:
 <p align="center">
     <img src="/img/Screenshot (3).png" alt="Laradock Logo"/>
 </p>
