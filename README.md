@@ -54,8 +54,48 @@ Features
 - pvanh98 (github.com/pvanh98)
 ---
 
-
-
+<p align="center">
+    <img src="/img/Screenshot (1).png" alt="Laradock Logo"/>
+</p>
+<p align="center">
+    <img src="/img/Screenshot (2).png" alt="Laradock Logo"/>
+</p>
+<p align="center">
+    <img src="/img/Screenshot (3).png" alt="Laradock Logo"/>
+</p>
+<p align="center">
+    <img src="/img/Screenshot (4).png" alt="Laradock Logo"/>
+</p>
+<p align="center">
+    <img src="/img/Screenshot (5).png" alt="Laradock Logo"/>
+</p>
+<p align="center">
+    <img src="/img/Screenshot (6).png" alt="Laradock Logo"/>
+</p>
+<p align="center">
+    <img src="/img/Screenshot (6).png" alt="Laradock Logo"/>
+</p>
+<p align="center">
+    <img src="/img/Screenshot (7).png" alt="Laradock Logo"/>
+</p>
+<p align="center">
+    <img src="/img/Screenshot (8).png" alt="Laradock Logo"/>
+</p>
+<p align="center">
+    <img src="/img/Screenshot (9).png" alt="Laradock Logo"/>
+</p>
+<p align="center">
+    <img src="/img/Screenshot (10).png" alt="Laradock Logo"/>
+</p>
+<p align="center">
+    <img src="/img/Screenshot (11).png" alt="Laradock Logo"/>
+</p>
+<p align="center">
+    <img src="/img/Screenshot (12).png" alt="Laradock Logo"/>
+</p>
+<p align="center">
+    <img src="/img/Screenshot (13).png" alt="Laradock Logo"/>
+</p>
 Contributing
 ------------
 
