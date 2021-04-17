@@ -53,10 +53,11 @@ Features
 - Teluser (github.com/Teluser)
 - pvanh98 (github.com/pvanh98)
 ---
-
+Login:
 <p align="center">
-    <img src="/img/Screenshot (1).png" alt="Laradock Logo"/>
+    <img src="/img/Screenshot.png" alt="Laradock Logo"/>
 </p>
+User infomation and Change password panel:
 <p align="center">
     <img src="/img/Screenshot (2).png" alt="Laradock Logo"/>
 </p>
