@@ -5,7 +5,7 @@
 git clone https://github.com/manhlab/Document-Management-System.git
 
 # Enter the laradock folder
-cd Document-Management-System.git/laradock
+cd Document-Management-System/laradock
 
 # Copy file env-example to .env
 cp env-example .env
