@@ -156,7 +156,6 @@ export default {
         { value: "symbol", label: "Номер регистрации" },
         { value: "abstract", label: "Краткое содержание" },
         { value: "type.name", label: "Тип документа" },
-        { value: "creator.name", label: "Создатель" },
         { value: "signer.name", label: "Подписал" },
         {
           value: "effective_at",

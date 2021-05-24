@@ -264,9 +264,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         value: "type.name",
         label: "Тип документа"
       }, {
-        value: "creator.name",
-        label: "Создатель"
-      }, {
         value: "signer.name",
         label: "Подписал"
       }, {

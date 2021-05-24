@@ -41,37 +41,17 @@
         </CRow>
         <CRow class="form-group">
           <CCol sm="6">
-            <CFormGroup class="form-group mb-0">
-              <template #label>
-                <slot name="label">
-                  <label>Создатель</label>
-                </slot>
-              </template>
-              <template #input>
-                <treeselect
-                  v-model="document.writer_id"
-                  :multiple="false"
-                  :options="writers"
-                  @search-change="fetchWriters"
-                  @input="onClearWriter"
-                >
-                  <label
-                    slot="option-label"
-                    slot-scope="{ node }"
-                  >{{ node.raw.department ? node.raw.label + ' - ' + node.raw.department.name : node.raw.label }}</label>
-                </treeselect>
-              </template>
-            </CFormGroup>
+            <CInput label="Автор" :value="document.creator.name" readonly class="mb-0" />
           </CCol>
           <CCol sm="6">
-            <CInput label="Автор" :value="document.creator.name" readonly class="mb-0" />
+            <CInput label="Автор ID" :value="document.creator.name" readonly class="mb-0" />
           </CCol>
         </CRow>
         <CTextarea
           label="Краткое содержание"
           placeholder="Content..."
           rows="5"
-          :value.sync="document.abstract"
+          :value.sync="document.abstract"~
         />
         <CRow class="form-group">
           <CCol sm="6">

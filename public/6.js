@@ -612,70 +612,7 @@ var render = function() {
                     "CCol",
                     { attrs: { sm: "6" } },
                     [
-                      _c("CFormGroup", {
-                        staticClass: "form-group mb-0",
-                        scopedSlots: _vm._u(
-                          [
-                            {
-                              key: "label",
-                              fn: function() {
-                                return [
-                                  _vm._t("label", [
-                                    _c("label", [_vm._v("Создатель")])
-                                  ])
-                                ]
-                              },
-                              proxy: true
-                            },
-                            {
-                              key: "input",
-                              fn: function() {
-                                return [
-                                  _c("treeselect", {
-                                    attrs: {
-                                      multiple: false,
-                                      options: _vm.writers
-                                    },
-                                    on: {
-                                      "search-change": _vm.fetchWriters,
-                                      input: _vm.onClearWriter
-                                    },
-                                    scopedSlots: _vm._u([
-                                      {
-                                        key: "option-label",
-                                        fn: function(ref) {
-                                          var node = ref.node
-                                          return _c("label", {}, [
-                                            _vm._v(
-                                              _vm._s(
-                                                node.raw.department
-                                                  ? node.raw.label +
-                                                      " - " +
-                                                      node.raw.department.name
-                                                  : node.raw.label
-                                              )
-                                            )
-                                          ])
-                                        }
-                                      }
-                                    ]),
-                                    model: {
-                                      value: _vm.document.writer_id,
-                                      callback: function($$v) {
-                                        _vm.$set(_vm.document, "writer_id", $$v)
-                                      },
-                                      expression: "document.writer_id"
-                                    }
-                                  })
-                                ]
-                              },
-                              proxy: true
-                            }
-                          ],
-                          null,
-                          true
-                        )
-                      })
+                      
                     ],
                     1
                   ),
